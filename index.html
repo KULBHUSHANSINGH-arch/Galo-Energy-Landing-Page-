@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iN17HT9tVuZzgbfgS8r+OlD3M9EnCooDNIjst2IepERHa7LrNHK64hWS" crossorigin="anonymous">
+
+    <title>Single Page Application</title>
+</head>
+<body> 
+    <header>
+        <nav>
+            <ul class="menu"> 
+                <li><a href="#trending-post">Trending Post</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tags">Tag</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="#latest-post">Latest Post</a></li> 
+            </ul>
+            <div class="social-icons">
+                <a href="#" class="icon1"><img src="./images/facebook.png" alt="Facebook"></a>
+                <a href="#" class="icon1"><img src="./images/instagram.png" alt="Instagram"></a>
+                <a href="#" class="icon1"><img src="./images/whatsapp.png" alt="WhatsApp"></a>
+              
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="button">Search</button>
+            </div>
+           
+        </nav>
+    </header>
+
+
+
+    <!-- <div class="container">
+        <img src="/images/solar-energy.avif" alt="Image Description">
+        <p>Your text goes here. This can be a description of the image or any content you want to display within the container.</p>
+        <a href="#" class="read-more">Read more</a>
+    </div> -->
+
+    <div class="parent-container">
+
+        <!-- First container -->
+        <div class="container">
+            <img src="/images/solar-energy.avif" alt="Image Description">
+            <h1>Building's</h1>
+            <p>The main advantage is that it is a renewable, clean source of electricity. Solar power is also scalable. This means that it can be deployed on an industrial scale, or it can be used to power a single household. </p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+        
+        <!-- Second container -->
+        <div class="container">
+            <img src="/images/solar.jpg" alt="Image Description">
+            <h1>Solar Companys</h1>
+            <p>Solar power, also known as solar electricity, is the conversion of energy from sunlight into electricity, using photovoltaics or indirectly using concentrated solar power. Photovoltaic cells convert light into an electric current using the photovoltaic effect</p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+        
+        <!-- Third container -->
+        <div class="container">
+            <img src="/images/solarpump2.webp" alt="Image Description">
+            <h1>Farming</h1>
+            <p>When it’s used on a small scale, extra electricity can be stored in a battery or fed back into the electricity grid. Overall, the sun gives off far more energy than we’ll ever need. The only limitation is our ability to convert it to electricity in a cost-effective way.</p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+    
+    </div>
+
+
+    <!-- ********************* You Tube Video *********************** -->
+    <div class="container3">
+        <section id="news-videos">
+            <h2>Solar Inquiry System</h2>
+            <p>Stay informed with our curated collection of news videos.</p>
+            <!-- Embed news videos here -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </div>
+    
+    
+        <!-- ********************* Uploaded Video by Coder*********************** -->
+        <div class="upload-container">
+            <h1>Video Upload</h1>
+            <form id="videoUploadForm">
+                <label for="videoFile">Choose a video:</label>
+                <input type="file" id="videoFile" name="videoFile" accept="video/*">
+                <button type="button" onclick="uploadVideo()">Upload</button>
+            </form>
+            <div id="uploadStatus"></div>
+        </div>
+    
+    <!-- ****************************** New Container *********************************** -->
+
+
+    <div class="combined-container">
+        <h2>Details & Inquiry</h2>
+        <form action="submit_inquiry.php" method="post" onsubmit="addDateToEmail()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="inquiry">Inquiry:</label>
+            <textarea id="inquiry" name="inquiry" rows="4" required></textarea><br>
+            <p><span id="currentDate"></span></p>
+    
+            <button type="submit">Submit Inquiry</button>
+        </form>
+
+
+        <!-- Feedback/Comment Box -->
+        <label for="feedback">Feedback or Comment:</label>
+        <textarea id="feedback" name="feedback" rows="4"></textarea><br>
+        <button onclick="subscribe()">Subscribe</button>
+        
+    </div>
+
+    <div class="Social-Media">
+        <a href="#" class="icon"><img src="./images/google.png" alt="Google"></a>
+        <a href="#" class="icon"><img src="./images/linkedin.png" alt="Linkedln"></a>
+        <a href="#" class="icon"><img src="./images/twitter.png" alt="Twiter"></a>
+      
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Your Company. All rights reserved. | Designed by Your Name</p>
+      </div>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
