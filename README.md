@@ -1,1 +1,1 @@
-# galo-energy
+Galo Energy (Landing Page)
